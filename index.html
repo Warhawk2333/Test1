@@ -5,24 +5,37 @@
   <title>Stil trying to learn Html</title>
     <style>
 
-      @keyframes colorChange {
+      @keyframes opacityChange {
         from{opacity:0}
         to{opacity:100}
         from{opacity:100}
         to{opacity:0}
       }
-
-
-      p{
+      @keyFrames colorChange {
+        from{color: red;}
+        to{color: green;}
+        from{color:green;}
+        to{color:blue;}
+        from{color:blue;}
+        to{color: red;}
+      }
+      
+      .bianSe{
         animation:colorChange 1s infinite;
+      }
+      
+      .shanShuo{
+        animation:opacityChange 1s infinite;
         color:red;
       }
+      
     </style>
     </head>
 <body>
 <br>
 <br>
-<p align="center">Told ya I'm still learning!</p>
-<div align="center"><a href="2048/2048.html">Click this to play 2048</a></div>
+<p align="center" class="shanShuo">Told ya I'm still learning!</p>
+<p align="center" class="bianSe">说出来你可能不信，这还真是我自己折腾的！</p>
+<div align="center"><a href="2048/2048.html">Click this to play 2048<br>点击游玩2048</a></div>
 </body>
 </html>
